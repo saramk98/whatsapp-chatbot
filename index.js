@@ -13,8 +13,11 @@ whatsapp.on('qr',qr =>{
 })
 
 whatsapp.on('message',async message =>{
-    console.log("message :",message);
-        message.reply("hello from saram this is an automated message")
+    // replying to message on a specific keyword
+    // if(message.body === "hello"){
+    //     message.reply("hello from user this is an automated message")
+    // }
+        message.reply("hello from user this is an automated message")
 })
 
 whatsapp.on('ready',()=>{
